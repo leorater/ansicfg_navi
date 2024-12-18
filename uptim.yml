@@ -1,0 +1,10 @@
+---
+- name: Get uptime info
+  hosts: all
+  tasks:
+    - name: Its uptime time
+      ansible.builtin.shell:
+        cmd:  /usr/bin/uptime
+    - name: Getting utput
+      ansible.builtin.debug:
+        var: result

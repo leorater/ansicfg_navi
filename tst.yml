@@ -1,0 +1,8 @@
+---
+- name: Testing
+  hosts: localhost
+  tasks:
+    - name: Hello
+      ansible.builtin.shell:
+        cmd: echo "hi"
+
